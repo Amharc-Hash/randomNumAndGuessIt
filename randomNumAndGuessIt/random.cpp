@@ -3,25 +3,28 @@
 #include<conio.h>
 #include<time.h>
 
-int main(int argc, char const* argv[])
+int main()
 {
     srand(time(NULL));
     int a[100];
+    int inputnum;
+    printf("input your max range of number that you want to random  : ");
+        scanf("%d", &inputnum);
     for (int i = 0; i < 3; i++)
     {
         scanf("%d", &a[i]);
     }
 
-    int randomnum = rand() % 5;
-    if (randomnum = a[0])
+    int randomnum = rand() % inputnum;
+    if (randomnum == a[0])
     {
         printf("Correct\n");
     }
-    else if (randomnum = a[1])
+    else if (randomnum == a[1])
     {
         printf("Correct\n");
     }
-    else if (randomnum = a[2])
+    else if (randomnum == a[2])
     {
         printf("Correct\n");
     }
