@@ -6,7 +6,7 @@
 int main()
 {
     srand(time(NULL));
-    int a[100];
+    int a[5];
     int inputnum;
     printf("input your max range of number that you want to random  : ");
         scanf("%d", &inputnum);
